@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Vardaan/static/css/main.daa64722.chunk.css",
+    "main.js": "/Vardaan/static/js/main.15904e47.chunk.js",
+    "main.js.map": "/Vardaan/static/js/main.15904e47.chunk.js.map",
+    "runtime-main.js": "/Vardaan/static/js/runtime-main.dabc5b98.js",
+    "runtime-main.js.map": "/Vardaan/static/js/runtime-main.dabc5b98.js.map",
+    "static/js/2.d84975ce.chunk.js": "/Vardaan/static/js/2.d84975ce.chunk.js",
+    "static/js/2.d84975ce.chunk.js.map": "/Vardaan/static/js/2.d84975ce.chunk.js.map",
+    "static/js/3.242d67ae.chunk.js": "/Vardaan/static/js/3.242d67ae.chunk.js",
+    "static/js/3.242d67ae.chunk.js.map": "/Vardaan/static/js/3.242d67ae.chunk.js.map",
+    "index.html": "/Vardaan/index.html",
+    "static/css/main.daa64722.chunk.css.map": "/Vardaan/static/css/main.daa64722.chunk.css.map",
+    "static/js/2.d84975ce.chunk.js.LICENSE.txt": "/Vardaan/static/js/2.d84975ce.chunk.js.LICENSE.txt",
+    "static/media/AboutUs.css": "/Vardaan/static/media/lib.e1c9fce8.jpg",
+    "static/media/logo.6ce24c58.svg": "/Vardaan/static/media/logo.6ce24c58.svg",
+    "static/media/logos.d0e2856b.png": "/Vardaan/static/media/logos.d0e2856b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dabc5b98.js",
+    "static/js/2.d84975ce.chunk.js",
+    "static/css/main.daa64722.chunk.css",
+    "static/js/main.15904e47.chunk.js"
+  ]
+}
