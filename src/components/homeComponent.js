@@ -83,7 +83,10 @@ export default function HideAppBar(props) {
               Scroll to Hide App Bar
             </Typography> */}
               <Link to={"aboutMe"} smooth={true} duration={500} activeClass="active" isDynamic={true}>
-                <Button>abhishek</Button>
+                <Button>Founders</Button>
+              </Link>
+              <Link to={"querry"} smooth={true} duration={500} activeClass="active" isDynamic={true}>
+                <Button>Querry</Button>
               </Link>
             </Toolbar>
           </div>

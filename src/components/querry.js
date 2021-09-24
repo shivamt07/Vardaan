@@ -16,7 +16,8 @@ function MyServices() {
 
         return (
         //   <Grid item sm={12} xs={12} className="card-spacing">
-            <Card style={{backgroundColor: "cadetblue", overflow:"hidden"}} elevation={10}>
+        <div id="querry">
+            <Card style={{backgroundColor: "cadetblue", overflow:"hidden", marginTop:"70px"}} elevation={10} >
               <CardContent className="card-content" style={{backgroundColor: "#38A3A5", overflow:"clip", height:"310px"}} >
               <Box
       component="form"
@@ -40,6 +41,7 @@ function MyServices() {
     </Box>
               </CardContent>
             </Card>
+            </div>
         //   </Grid>
         )
         }
