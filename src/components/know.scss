@@ -1,0 +1,40 @@
+
+.card-spacing {
+  margin: 5% 30px !important;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.card-heading {
+  font-size: 25px;
+  font-weight: 500;
+}
+.icon-size {
+  height: 70px;
+  width: 70px;
+}
+.my-services-icon-style {
+  width: 100% !important;
+  height: 100%;
+  color: "yellow";
+}
+.card-color {
+  &:hover {
+    background-color: "yellow"!important;
+    color: "yellow" !important;
+  }
+}
+.card-color-two {
+  &:hover {
+    background-color: "yellow" !important;
+    color: "yellow" !important;
+  }
+}
+.skill-heading-container {
+  max-height: 90px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
