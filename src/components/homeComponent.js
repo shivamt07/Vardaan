@@ -18,7 +18,8 @@ import Logo from "../assets/logos.png";
 import CardMedia from "@mui/material/CardMedia";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
+import AboutUs from "./AboutUs";
 
 const styles = {
   media: {
@@ -42,6 +43,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
+const navData = [
+  { key: 1, offset: -73, to: "aboutMe", title: "About me" },
+  { key: 2, offset: -57, to: "service", title: "My Services" },
+  { key: 3, offset: -73, to: "skill", title: "My Skills" },
+  { key: 4, offset: -57, to: "project", title: "My Projects" },
+  { key: 5, offset: -73, to: "contact", title: "Contact me" },
+];
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -77,18 +86,22 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar style={{ backgroundColor: "#CEE5D0" }}>
           <div className={classes.sectionDesktop}>
-            <Toolbar>
-              <img src={Logo} alt="Girl in a jacket" width="150" height="60" />
-              {/* <Typography variant="h6" component="div">
-              Scroll to Hide App Bar
-            </Typography> */}
-              <Link to={"aboutMe"} smooth={true} duration={500} activeClass="active" isDynamic={true}>
-                <Button>Founders</Button>
-              </Link>
-              <Link to={"querry"} smooth={true} duration={500} activeClass="active" isDynamic={true}>
-                <Button>Querry</Button>
-              </Link>
-            </Toolbar>
+            <Grid container justify="center">
+              <Grid item xs={2}>
+                <img src={Logo} alt="Girl in a jacket" width="150" height="60" />
+              </Grid>
+              {navData.map((data) => {
+                return (
+                  <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-high-effect" key={data.key}>
+                    <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="top-bar-link">
+                      <Button className="item-btn">
+                        <strong className="top-bar-text">{data.title}</strong>
+                      </Button>
+                    </Link>
+                  </Grid>
+                );
+              })}
+            </Grid>
           </div>
           <div className={classes.sectionMobile}>
             <Toolbar>
@@ -101,7 +114,8 @@ export default function HideAppBar(props) {
       </HideOnScroll>
       <Toolbar />
       {/* <Container> */}
-      <About style={{ marginTop: "50px" }} />
+      <AboutUs />
+      {/* <About style={{ marginTop: "50px" }} /> */}
       <Know />
       <Querry />
       <Profile />
