@@ -16,9 +16,11 @@ function MyServices() {
 
         return (
         //   <Grid item sm={12} xs={12} className="card-spacing">
-            <Card style={{backgroundColor: "cadetblue", overflow:"hidden"}} id="contact" elevation={10}>
-              <CardContent className="card-content" style={{backgroundColor: "#22577A", overflow:"clip", height:"310px"}} >
-     
+            <Card style={{backgroundColor: "black", overflow:"hidden"}} id="contact" elevation={10}>
+              <CardContent className="card-content" style={{backgroundColor: "black", overflow:"clip", height:"310px"}} >
+              <Typography variant="body1" color="white">
+                © 2019 Gistia
+              </Typography>
               </CardContent>
             </Card>
         //   </Grid>

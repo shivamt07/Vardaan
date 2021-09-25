@@ -146,7 +146,7 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar style={{ backgroundColor: "#CEE5D0" }}>
+        <AppBar style={{ backgroundColor: "black" }}>
           <div className={classes.sectionDesktop}>
             <Grid container justify="center">
               <Grid item xs={2}>
@@ -157,7 +157,7 @@ export default function HideAppBar(props) {
                   <Grid item lg={2} md={2} sm={2} xs={2} className="top-bar-item hover-high-effect" key={data.key}>
                     <Link to={data.to} smooth={true} duration={500} offset={data.offset} activeClass="active" isDynamic={true} className="top-bar-link">
                       <Button className="item-btn">
-                        <strong className="top-bar-text" style={{color:"#6b6f82"}}>{data.title}</strong>
+                        <strong className="top-bar-text" style={{color:"rgb(255 255 255)"}}>{data.title}</strong>
                       </Button>
                     </Link>
                   </Grid>
