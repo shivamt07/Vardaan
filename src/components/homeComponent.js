@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   sectionMobile: {
-    display: "flex",
+    // display: "flex",
     height: "100%",
     [theme.breakpoints.up("md")]: {
       display: "none",
@@ -142,6 +142,14 @@ export default function HideAppBar(props) {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const Item = styled(Paper)(({ theme }) => ({
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  }));
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -167,14 +175,13 @@ export default function HideAppBar(props) {
           </div>
           <div className={classes.sectionMobile}>
             <Toolbar>
-              {/* <Grid xs={10} sm={3}>            */}
-              <Grid >
-                <img src={Logo} alt="logo" width="100" height="40" />
-              </Grid>
-              <Grid  >
-              {/* <MobMenu/> */}
 
-              <MenuIcon
+            <Grid container spacing={2}>
+  <Grid item xs={10}>
+  <img src={Logo} alt="logo" width="100" height="40" />
+  </Grid>
+  <Grid item xs={2}>
+  <MenuIcon
          id="demo-customized-button"
          aria-controls="demo-customized-menu"
          aria-haspopup="true"
@@ -182,7 +189,7 @@ export default function HideAppBar(props) {
          variant="contained"
          disableElevation
          onClick={handleClick}
-         style={{position:"relative", left:"218px"}}
+         style={{marginTop: "13px"}}
       />
       <StyledMenu
         id="demo-customized-menu"
@@ -208,34 +215,18 @@ export default function HideAppBar(props) {
                 );
               })}
       </StyledMenu>
-
-              </Grid>
-              {/* </Grid> */}
+  </Grid>
+</Grid>
             </Toolbar>
           </div>
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      {/* <Container> */}
       <AboutUs />
-      {/* <About style={{ marginTop: "50px" }} /> */}
       <Know />
       <Querry />
       <Profile />
       <Footer />
-      {/* <Paper style={{backgroundColor:"black"}} elevation={3} />
-        <Box sx={{ my: 2 }}>
-        <Paper style={{backgroundColor:"black"}} elevation={3} />
-          {[...new Array(12)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
-        </Box> */}
-      {/* </Container> */}
     </React.Fragment>
   );
 }
