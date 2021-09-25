@@ -12,7 +12,6 @@ export default function ActionAreaCard() {
   let cardData = [
     { key: 1, title: "Rohan", subheading: "Founder, Deal with all the medical and railway contracts " },
     { key: 2, title: "Saurav", subheading: "Co Founder, Deal with all the Automobiles and other sectors " },
-    { key: 3, title: "Manish", subheading: "Co Founder, Deal with all the CCTV and other sectors" },
   ];
 
   return (

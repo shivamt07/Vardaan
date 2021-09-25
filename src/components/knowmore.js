@@ -13,6 +13,7 @@ let cardData = [
   { key: 1, title: "Automobiles", subheading: "I have a good knowledge of JavaScript and have done many projects on javascript related frameworks and libraries." },
   { key: 2, title: "CCTV", subheading: "I worked on a couple of projects to make Accessibility for the Differently abled people and having good knowledge of WCAG 2.0 and WCAG 3.0." },
   { key: 3, title: "Railway", subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
+  { key: 4, title: "medical", subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
 ];
 function MyServices() {
   return (
