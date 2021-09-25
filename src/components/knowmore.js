@@ -10,10 +10,10 @@ import CardContent from "@material-ui/core/CardContent";
 // // import cogsIcon from "@iconify-icons/mdi/cogs";
 
 let cardData = [
-  { key: 1, title: "Automobiles", subheading: "I have a good knowledge of JavaScript and have done many projects on javascript related frameworks and libraries." },
-  { key: 2, title: "CCTV", subheading: "I worked on a couple of projects to make Accessibility for the Differently abled people and having good knowledge of WCAG 2.0 and WCAG 3.0." },
-  { key: 3, title: "Railway", subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
-  { key: 4, title: "Medical", subheading: "I have good knowledge of writing unit tests, functional tests, and integration testing. Using mocha chai and Cypress.io" },
+  { key: 1, title: "Automobiles", subheading: "Automobiles things, specially services kinds of things" },
+  { key: 2, title: "CCTV", subheading: "Intergrating CCTV at mass level and Maintainace of already installed CCTV's" },
+  { key: 3, title: "Railway", subheading: "Constructing railways parts" },
+  { key: 4, title: "Medical", subheading: "Vardaan also works in medical field, Pharmacy, Labs and medical instruments" },
 ];
 function MyServices() {
   return (
